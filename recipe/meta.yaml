@@ -11,18 +11,17 @@ source:
   sha256: dce5404128150df5a6598a916bbbeb021e36624d16e2624f34e6e94dffac4501
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
-    - ipaddress
     - pymongo <4.0,>=3.4
-    - python
+    - python >=3.6
 
 test:
   imports:
