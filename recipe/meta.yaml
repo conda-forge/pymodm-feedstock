@@ -1,5 +1,5 @@
 {% set name = "pymodm" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: dce5404128150df5a6598a916bbbeb021e36624d16e2624f34e6e94dffac4501
+  sha256: b9fc352dabca1c10bc9342167ab322ce2898b68a79c42e19f0baa7d5b7578ea1
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
